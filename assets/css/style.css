@@ -21,13 +21,11 @@ ul {
 }
 
 .logoAndSearch {
-    width: 62%;
     display: flex;
     justify-content: space-between;
 }
 
 .logo {
-    width: 40%;
     padding-left: 4rem;
 }
 
@@ -44,26 +42,29 @@ ul {
 }
 
 .searchOnDivisima input {
-    width: 100%;
     border: none;
     background-color: #f0f0f0;
-    padding: 1.6rem 2rem;
-    border-radius: 3rem;
+    height: 4rem;
+    width: 50rem;
+    height: 4rem;
+    padding-left: 1rem;
+    border-radius: 2rem;
+    margin-left: 3rem;
+
+}
+.shoppingCart span{
+    padding-left: 0.5rem;
 }
 
-.shoppingAndCreat {
+.shoppingAndCreat{
     display: flex;
+    width: 30rem;
     justify-content: space-between;
-    width: 26%;
-}
-
-.shop-cart {
-    width: 100%;
 }
 
 .shoppingCart {
-    width: 40%;
     display: flex;
+    padding-left: 2rem;
     align-items: center;
     justify-content: space-evenly;
 }
@@ -73,7 +74,6 @@ ul {
 }
 
 .creatAnAccount {
-    width: 60%;
     display: flex;
     align-items: center;
 }
@@ -193,7 +193,7 @@ ul {
 .priceText {
     line-height: 3.5rem;
     width: 92%;
-    padding: 0.8rem 0;
+    padding: 0 ;
     border: 1px solid #ffffff6e;
     border-radius: 50%;
     display: flex;
@@ -250,6 +250,42 @@ ul {
 
 .num span{
     color: #ffffff;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.sectionPermiumProduct{
+    display: flex;
+    justify-content: center;
+}
+
+.permiumProductbox{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 1rem;
+    align-items: center;
+}
+
+.permiumProductbox span{
+   font-size: 2rem;
+}
+
+.permiumProductImg{
+    width: 4rem;
+    padding-right: 1rem;
+}
+
+.permiumProduct{
+    background-color: #f51167;
+    color: #ffffff;
+}
+
+.fastDeliver,.fastSecure{
+    background-color:#f8f8f8;
+}
+
+.fastDeliver,.fastSecure span{
     font-size: 2rem;
     font-weight: 600;
 }
