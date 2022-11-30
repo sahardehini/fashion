@@ -260,7 +260,7 @@ ul {
 }
 
 .permiumProductbox{
-    width: 30%;
+    width: 34%;
     display: flex;
     justify-content: center;
     padding: 2rem 1rem;
@@ -310,13 +310,13 @@ ul {
     justify-content: space-between;
 }
 .cards{
-    width: 28rem;
-    height: 52rem;  
+    width: 26rem;
+    height: 50rem;  
 }
 
 .allCards{
-    width: 28rem;
-    height: 46rem;
+    width: 26em;
+    height: 44rem;
 }
 
 .cardOneBg{
@@ -376,4 +376,104 @@ ul {
 .cardText p{
     font-size: 1.6rem;
     font-weight: 600;
+}
+
+.sellingProduct{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.sellingProductHeader{
+    font-size: 2.5rem;
+    word-spacing: 1rem;
+    letter-spacing: 0.2rem;
+    margin: 4rem 0;
+    font-weight: 600;
+
+}
+
+.sellingProductMenue{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    margin: 2rem;
+    justify-content: space-evenly;
+}
+
+    
+
+.sellingProductMenueList a{
+    background-color: #ebebeb;
+    color: #282828;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+
+}
+
+
+.cardsSellingProduct{
+    display: grid;
+    margin: 1rem auto;
+    gap: 4rem;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.cardFiveBg{
+    background-image: url(../img/product/5.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.cardSixBg{
+    background-image: url(../img/product/6.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.cardSevenBg{
+    background-image: url(../img/product/7.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.cardEightBg{
+    background-image: url(../img/product/8.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.cardNineBg{
+    background-image: url(../img/product/9.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.cardTenBg{
+    background-image: url(../img/product/10.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.cardElevenBg{
+    background-image: url(../img/product/11.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.cardTwoelveBg{
+    background-image: url(../img/product/12.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
 }
