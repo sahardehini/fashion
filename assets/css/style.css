@@ -31,7 +31,7 @@ ul {
 
 .divisimaLogo {
     display: flex;
-    height: 7rem;
+    padding: 3rem 0;
     justify-content: space-around;
     background-color: #ffffff;
     align-items: center;
@@ -107,6 +107,10 @@ ul {
     font-size: 1.4rem;
     font-weight: 600;
 }
+
+.menueLists a:hover{
+    color: #f51167;
+}
    
 .banner {
     min-height: 70rem;
@@ -130,11 +134,28 @@ ul {
  .bannerText{
     width: 50%;
     color: #ffffff;
+ 
  }
 
  .bannerHeader{
     line-height: 4rem;
+    opacity: 0;
+    animation: bannerHeader .9s ease forwards;
+    animation-delay: .1s;
  }
+
+ 
+ @keyframes bannerHeader {
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    0% {
+        opacity: 0;
+        transform: translateY(100PX);
+    }
+}
+
  .bannerHeader h2{
     font-size: 4rem;
  }
@@ -145,8 +166,21 @@ ul {
     font-size: 1.4rem;
     line-height: 3rem;
     margin-top: 3rem;
+    opacity: 0;
+    animation: bannertext .9s ease forwards;
+    animation-delay: .3s;
 }
 
+@keyframes bannertext {
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    0% {
+        opacity: 0;
+        transform: translateY(100PX);
+    }
+}
 
  .bannerText span{
     font-size: 1.7rem;
@@ -159,7 +193,23 @@ ul {
     display: flex;
     width: 47%;
     justify-content: space-evenly;
+    opacity: 0;
+    animation: bannertext .9s ease forwards;
+    animation-delay: .5s;
 }
+
+
+@keyframes bannertext {
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    0% {
+        opacity: 0;
+        transform: translateY(100PX);
+    }
+}
+
 .btn{
     font-size: 1.3rem;
     padding: 1rem 4rem;
@@ -180,14 +230,28 @@ ul {
 }
 
 .price{
-    width: 13rem;
-    height: 13rem;
+    width: 12rem;
+    height: 12rem;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
     background-color: #f51167;
     color: #ffffff;
+    transform: rotate(60deg);
+    animation: price .9s ease forwards;
+    animation-delay: .1s;
+}
+
+@keyframes price {
+    100% {
+        opacity: 1;
+        transform: rotate(0);;
+    }
+    0% {
+        opacity: 0;
+        transform: rotate(45deg);;
+    }
 }
 
 .priceText {
@@ -296,6 +360,32 @@ ul {
     flex-direction: column;
 }
 
+.latestProductCards{
+    display: flex;
+}
+
+.productArrowRight,.productArrowLeft{
+    display: flex;
+}
+
+.productArrowLeft svg{
+    display: flex;
+    align-items: center;
+    width: 5rem;
+    opacity: 0.6;
+    padding-left: 2rem;
+    color: #4d4d4b;
+}
+
+.productArrowRight svg{
+    display: flex;
+    align-items: center;
+    width: 5rem;
+    opacity: 0.6;
+    padding-right: 2rem;
+    color: #4d4d4b;
+}
+
 .latestProductHeader{
     font-size: 3rem;
     font-weight: 600;
@@ -327,7 +417,7 @@ ul {
 }
 
 .cardTwoBg{
-    background-image: url(../img/product/2.jpg);
+    background-image:url(../img/product/2.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -362,6 +452,15 @@ ul {
     background-color: #ffffff;
 }
 
+.svgBag:hover{
+    width: 12rem;
+    padding-right: 7rem;
+    text-align: start;
+    border-radius: 2rem;
+    transition: all .3s ease;
+    
+}
+
 .cardText{
     display: flex;
     justify-content: space-between;
@@ -371,6 +470,8 @@ ul {
 
 .cardText span{
     font-size: 1.3rem;
+    text-align: center;
+    line-height: 1.7rem;
 }
 
 .cardText p{
@@ -695,5 +796,39 @@ footer{
 }
 
 .footerMediaIcon{
-    height: 30rem;
+    height: 10rem;
 }
+
+.footerMediaIcon{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footerText{
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #ffffff; 
+}
+
+.subMenuParent{
+    position: relative;
+}
+
+.subMenuParent:hover .subMenu{
+    display: block;
+}
+
+.subMenu{
+    background-color: #fff;
+    position: absolute;
+    top: 100%;
+    left: 5rem;
+    display: none;
+    padding: 1rem 2rem;
+}
+
+.subMenu li a{
+   color: #333333;
+}
+
