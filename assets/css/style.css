@@ -20,8 +20,13 @@ ul {
     list-style-type: none;
 }
 
+:root{
+    --main-color:#ffffff;
+}
+
 .logoAndSearch {
     display: flex;
+    width: 66%;
     justify-content: space-between;
 }
 
@@ -31,9 +36,9 @@ ul {
 
 .divisimaLogo {
     display: flex;
-    padding: 3rem 0;
+    padding: 2rem 0;
     justify-content: space-around;
-    background-color: #ffffff;
+    background-color: var(--main-color);
     align-items: center;
 }
 
@@ -44,21 +49,17 @@ ul {
 .searchOnDivisima input {
     border: none;
     background-color: #f0f0f0;
-    height: 4rem;
-    width: 50rem;
-    height: 4rem;
+    width: 90%;
+    padding: 1.5rem;
     padding-left: 1rem;
-    border-radius: 2rem;
+    border-radius: 3rem;
     margin-left: 3rem;
+}
 
-}
-.shoppingCart span{
-    padding-left: 0.5rem;
-}
 
 .shoppingAndCreat{
     display: flex;
-    width: 30rem;
+    width: 22%;
     justify-content: space-between;
 }
 
@@ -66,11 +67,13 @@ ul {
     display: flex;
     padding-left: 2rem;
     align-items: center;
+    position: relative;
     justify-content: space-evenly;
 }
 
-.shoppingCart span {
+.shoppingCart .shoppingText {
     font-size: 1.2rem;
+    padding-left: 0.5rem;
 }
 
 .creatAnAccount {
@@ -87,7 +90,18 @@ ul {
     height: 2.5rem;
 }
 
-    
+.numberBag{
+    background-color: #f51167;
+    border-radius: 50%;
+    color: var(--main-color);
+    position: absolute;
+    display: flex;
+    padding: 0 0.2rem;
+    top: -0.5rem;
+    left: 4rem;
+    justify-content: center;
+    text-align: center;
+}    
 .navigation {
     background-color: #282828;
 }
@@ -103,13 +117,57 @@ ul {
 }
 
 .menueLists a {
-    color: #ffffff;
+    color: var(--main-color);
     font-size: 1.4rem;
     font-weight: 600;
 }
 
+.jewelryList{
+    position: relative;
+}
+
+.jewelryList span{
+    background-color: #f51167;
+    color: var(--main-color);
+    position: absolute;
+    line-height: 1rem;
+    top: -2.5rem;
+    left: 5.5rem;
+    border-radius: 1rem;
+    font-weight: 600;
+    padding:0.2rem  0.7rem;
+}
+
 .menueLists a:hover{
     color: #f51167;
+}
+
+.subMenuParent{
+    position: relative;
+}
+
+.subMenuParent:hover .subMenu{
+    display: block;
+}
+
+.subMenu{
+    background-color: var(--main-color);
+    position: absolute;
+    top: 100%;
+    left: 5rem;
+    border-radius: 1rem;
+    display: none;
+    padding-top: 1rem;
+    padding-right: 6rem;
+}
+
+.subMenu li a{
+   color: #333333;
+}
+
+
+.subMenuLists{
+    padding: 1rem 1rem;
 }
    
 .banner {
@@ -133,7 +191,7 @@ ul {
 
  .bannerText{
     width: 50%;
-    color: #ffffff;
+    color: var(--main-color);
  
  }
 
@@ -184,7 +242,7 @@ ul {
 
  .bannerText span{
     font-size: 1.7rem;
-    color: #ffffff;
+    color: var(--main-color);
     font-weight: 600;
  }
 
@@ -216,7 +274,7 @@ ul {
 }
 
 .buttonAdd{
-    background-color: #ffffff;
+    background-color: var(--main-color);
     border-radius: 2rem;
     color: #282828;
     margin-left: 3rem;
@@ -224,8 +282,8 @@ ul {
 }
 
 .buttonDiscover{
-    border: 1px solid #ffffff;
-    color: #ffffff;
+    border: 1px solid  var(--main-color);
+    color: var(--main-color);
     border-radius: 2rem;
 }
 
@@ -237,7 +295,7 @@ ul {
     align-items: center;
     border-radius: 50%;
     background-color: #f51167;
-    color: #ffffff;
+    color: var(--main-color);
     transform: rotate(60deg);
     animation: price .9s ease forwards;
     animation-delay: .1s;
@@ -286,7 +344,7 @@ ul {
 
 .arrowLeft{
     width: 3rem;
-    color: #ffffff;
+    color: var(--main-color);
 }
 
 .arrow{
@@ -300,20 +358,20 @@ ul {
 .circleFull{
     width: 0.9rem;
     height: 0.9REM;
-    background-color: #ffffff;
+    background-color: var(--main-color);
     border-radius: 50%;
 }
 
 .ciecleEmpty{
     width: 0.9REM;
     height: 0.9REM;
-    border: 1px solid #ffffff;
+    border: 1px solid var(--main-color);
     border-radius: 50%;
     margin-left: 0.5rem;
 }
 
 .num span{
-    color: #ffffff;
+    color:  var(--main-color);
     font-size: 2rem;
     font-weight: 600;
 }
@@ -342,7 +400,7 @@ ul {
 
 .permiumProduct{
     background-color: #f51167;
-    color: #ffffff;
+    color: var(--main-color);
 }
 
 .fastDeliver,.fastSecure{
@@ -449,7 +507,11 @@ ul {
     margin-left: 0.5rem;
     padding: 0.5rem;
     border-radius: 50%;
-    background-color: #ffffff;
+    background-color: var(--main-color);
+}
+
+.svgAddToCart{
+    display: none;
 }
 
 .svgBag:hover{
@@ -460,6 +522,7 @@ ul {
     transition: all .3s ease;
     
 }
+
 
 .cardText{
     display: flex;
@@ -499,19 +562,20 @@ ul {
     display: flex;
     list-style-type: none;
     justify-content: center;
-    margin: 2rem;
+    margin: 2rem 5rem;
     justify-content: space-evenly;
 }
 
     
 
 .sellingProductMenueList a{
+    FONT-VARIANT: JIS78;
     background-color: #ebebeb;
     color: #282828;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: 600;
-    padding: 1rem 2rem;
+    padding: 1rem 3rem;
     border-radius: 2rem;
 
 }
@@ -614,7 +678,7 @@ ul {
     word-spacing: 1rem;
     font-weight: 600;
     color: #111111;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 
 
@@ -623,28 +687,28 @@ ul {
     word-spacing: 1rem;
     font-weight: 700;
     color: #111111;
-    font-size: 3rem;
+    font-size: 4rem;
     margin-bottom: 2rem;
 }
 
 .stripedShirtsText a{
     letter-spacing: 0.2rem;
     font-weight: 600;
-    color: #ffffff;
-    font-size: 1.3rem;
+    color: var(--main-color);
+    font-size: 1.5rem;
     background-color: #f51167;
     border-radius: 2rem;
-    padding: 1rem 2rem;
+    padding: 1.3rem 3rem;
 }
 .spanNew{
-color: #ffffff !important;
-background-color: #50e550;
-padding: 0 0.5rem;
-font-size: 1.2rem;
-position: absolute;
-top: 2rem;
-right: 2rem;
-border-radius: 2rem;
+    color: var(--main-color) !important;
+    background-color: #50e550;
+    line-height: 2rem;
+    padding: 0 1rem;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    border-radius: 2rem;
 }
 
 footer{
@@ -652,7 +716,7 @@ footer{
 }
   
 .footerHeader{
-    background-color: #282828;
+
     margin: 3rem auto;
     display: flex;
     justify-content: center;
@@ -671,7 +735,7 @@ footer{
 }
 
 .footerDescription{
-    color: #4d4d4b;
+    color: #575555;
     font-size: 1.2rem;
     line-height: 2.5rem;
     margin-bottom: 4rem;
@@ -691,7 +755,7 @@ footer{
 .footerAbout h2{
     margin-bottom: 2rem;
     font-size: 3rem;
-    color: #ffffff;
+    color: var(--main-color);
     font-weight: 600;
 }
 
@@ -703,7 +767,7 @@ footer{
 .footerQuestions1 h2{
     margin-bottom: 2rem;
     font-size: 2rem;
-    color: #ffffff;
+    color: var(--main-color);
 }
 
 .questionUlColumn2{
@@ -721,7 +785,7 @@ footer{
 
 .footerQuestions1List {
     font-size: 1.2rem;
-    color: #4d4d4b;
+    color: #575555
 }
 
 .questionsGallery{
@@ -747,7 +811,7 @@ footer{
 .footerQuestions2 h3{
     margin-bottom: 2rem;
     font-size: 2rem;
-    color: #ffffff;
+    color: var(--main-color);
 }
 
 .questionsGallery{
@@ -759,7 +823,7 @@ footer{
     font-size: 1.2rem;
     font-weight: 500;
     padding-bottom: 1rem;
-    color: #575555;
+    color: #706f6f;
 }
 
 
@@ -774,24 +838,26 @@ footer{
 }
 .questionsGallery h2{
     opacity: 0.4;
-    color: #4d4d4b;
+    color: #636360;
     padding-bottom: 1rem;
 }
 
 .footerQuestions3 h2{
     margin-bottom: 2rem;
     font-size: 2rem;
-    color: #ffffff; 
+    color: var(--main-color); 
 }
 
 .footerQuestions3List{
     padding-bottom: 1rem;
+    list-style-type: none;
 }
 
 .footerQuestions3List a{
     font-size: 1.2rem;
     font-weight: 500;
     padding-bottom: 1rem;
+    list-style-type: none;
     color: #575555;
 }
 
@@ -808,27 +874,7 @@ footer{
 .footerText{
     font-size: 1.4rem;
     font-weight: 600;
-    color: #ffffff; 
+    color: var(--main-color); 
 }
 
-.subMenuParent{
-    position: relative;
-}
-
-.subMenuParent:hover .subMenu{
-    display: block;
-}
-
-.subMenu{
-    background-color: #fff;
-    position: absolute;
-    top: 100%;
-    left: 5rem;
-    display: none;
-    padding: 1rem 2rem;
-}
-
-.subMenu li a{
-   color: #333333;
-}
 
