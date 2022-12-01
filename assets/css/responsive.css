@@ -1,5 +1,60 @@
-@media(max-width:600){
-    .navigation .menue{
-        display: none;
+@media(max-width:600px){
+    .divisimaLogo{
+        display: flex;
+        flex-direction: column;
     }
+
+    .logoAndSearch{
+        display: flex;
+        width: 100% ;
+        flex-direction: column;
+    }
+
+    .logo{
+        display: flex;
+        justify-content: center;
+        padding-left: 0;
+        margin-bottom: 2rem;
+}
+    .logo img{
+       width: 40%;
+}
+
+    .searchOnDivisima{
+       margin-bottom: 2rem;
+}
+
+   .shoppingAndCreat{
+    width: 100%;
+    display: flex;
+    justify-content: space-around ;
+}
+
+.navigation{
+    padding: 1rem 0;
+}
+
+.menueLists{
+    display: none !important;
+}
+
+.price{
+    display: none;
+}
+
+.bannerText{
+    width: 100%;
+    padding-left: 3rem;
+}
+
+.bannerButton{
+    width: 91%;
+    display: flex;
+    justify-content: flex-start;
+}
+.btn{
+    padding: 1rem 3rem;
+}
+
+
 }
