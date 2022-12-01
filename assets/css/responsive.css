@@ -104,8 +104,22 @@
      margin: 0 auto;
     }
 
+    .footermenue{
+        display: flex;
+        flex-direction: column;
+        margin-left: 4rem;
+    }
     .footerAbout {
         width: 64%;
+        margin-bottom: 3rem;
+    }
+
+    .footerQuestions1{
+        margin-bottom: 2rem;
+    }
+
+    .footerQuestions2{
+        margin-bottom: 2rem;
     }
 
 }
