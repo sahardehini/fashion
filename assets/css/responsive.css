@@ -56,5 +56,56 @@
     padding: 1rem 3rem;
 }
 
+.sectionPermiumProduct{
+    display: flex;
+    flex-direction: column;
+}
+
+.permiumProductbox{
+    width: 100%;
+}
+
+.productArrowLeft{
+    display: none;
+}
+
+.productArrowRight{
+    display: none;
+}
+
+.latestProductCards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sellingProductMenue{
+    width: 91%;
+    display: grid;
+    grid-template-columns: repeat(3,0.5fr);
+    gap: 3rem 0rem;
+    justify-content: center;  
+}
+
+.sellingProductMenueList a{
+    padding: 1rem 2rem;
+}
+
+.cardsSellingProduct{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.stripedShirts{
+    width: 76%;
+    background-position: center;
+     margin: 0 auto;
+    }
+
+    .footerAbout {
+        width: 64%;
+    }
 
 }
