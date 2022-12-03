@@ -8,9 +8,13 @@ html {
     font-size: 62.5%;
 }
 
-body {
-    font-family: Arial, Helvetica, sans-serif
-}
+@font-face {
+    font-family: josefin;
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/JosefinSans-Regular.ttf') format('truetype');    
+} 
+
 
 a {
     text-decoration: none;
@@ -120,6 +124,7 @@ ul {
     color: var(--main-color);
     font-size: 1.4rem;
     font-weight: 600;
+    font-family: 'josefin';
 }
 
 .jewelryList{
@@ -181,7 +186,6 @@ ul {
 }
  .bannerContent{
     width: 100%;
-    height: 80rem;
     align-items: center;
     display: flex;
     align-items: center;
