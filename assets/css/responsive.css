@@ -1,3 +1,42 @@
+
+
+@media(max-width:768px){
+    .bannerButton{
+        width: 100%;
+    }
+
+    .logo {
+        padding-left: 2rem;
+        width: 46%;
+    }
+
+    .logoAndSearch {
+        display: flex;
+        width: 66%;
+        align-items: center;
+    }
+
+    .shoppingAndCreat {
+        display: flex;
+        margin-left: 2rem;
+        width: 40%;
+    }
+
+    .productArrowRight,.productArrowLeft {
+        display: none;
+    }
+
+    .latestProductCards {
+        display: grid;
+        margin-top: 7rem;
+        grid-template-columns: repeat(2,1fr);
+        margin: 1rem;
+    }
+}
+
+
+
+
 @media(max-width:600px){
     .divisimaLogo{
         display: flex;
@@ -76,6 +115,7 @@
 .latestProductCards{
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
 }
 
