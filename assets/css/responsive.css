@@ -1,6 +1,12 @@
 
+@media(max-width:1200px){
+    .productArrowRight,.productArrowLeft {
+        display: none;
+    }
+}
 
-@media(max-width:768px){
+
+@media(max-width:993px){
     .bannerButton{
         width: 100%;
     }
@@ -29,8 +35,23 @@
     .latestProductCards {
         display: grid;
         margin-top: 7rem;
+        margin-left: 7rem;
         grid-template-columns: repeat(2,1fr);
         margin: 1rem;
+    }
+
+    .cardsSellingProduct{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin: 1rem;
+        justify-content: center !important;
+    }
+
+    .sellingProductMenue{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 3rem 0;
+        margin: 2rem 0
     }
 }
 
@@ -124,7 +145,7 @@
     display: grid;
     grid-template-columns: repeat(3,0.5fr);
     gap: 3rem 0rem;
-    justify-content: center;  
+        margin-left: 3rem;
 }
 
 .sellingProductMenueList a{
@@ -135,6 +156,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     margin-top: 3rem;
 }
 
